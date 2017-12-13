@@ -1,0 +1,32 @@
+0. O que é pneumoultramicroscopicossilicovulcanoconiose?
+Uma inflamação pulmonar causada pela inalação de cinza vulcânica.
+
+1. De acordo com a sua página do manual, o que getrusage fazer?
+Obtêm o uso de recursos.
+
+2. De acordo com a mesma página, quantos membros tem uma variável do tipo struct rusage?
+16.
+
+3. Porque você acha que passamos before e after por referência (em vez de por valor) para calculate, mesmo que nós não estejamos mudando os seus conteúdos?
+Desempenho. Através do seu endereço, acessar as variáveis que estão na estrutura, que é mais rápido do que copiar tudo para novas variáveis.
+
+4. Explicar com a maior precisão possível, em um parágrafo ou mais, como main age para ler as palavras de um arquivo. Em outras palavras, nos convença de que você realmente entende como o for loop dessa função funciona.
+Pegue caractere do arquivo. Se for letra ou apóstrofe, coloque o caractere em word[], ignora se for número ou maior que o limite, faz isso até o final da palavra. Depois termina a palavra com \0, atualiza o contador, verifica a ortografia, atualiza benchmark, imprime a palavra se estiver incorreta, repete até o arquivo acabar.
+
+5. Porque você acha que nós usamos fgetc para ler cada caracter de cada palavra ao vez ao invés de fscanf com uma string formatada como "%s" para ler palavras inteiras de uma vez? Dito de outra forma, que problemas poderiam surgir ao depender de fscanf para realizar essa tarefa?
+Seria mais complicado lidar com palavras com números ou maiores que o limite.
+
+6. Por que você acha que nós declaramos tantos parâmetros const em dictionary.c e dictionary.h?
+Porque o valor destas variáveis não será alterado.
+
+7. Qual estrutura de dado(s) você usou para implementar o seu corretor ortográfico? Certifique-se de não responder apenas "hash table", "trie", ou coisa parecida. Fale um pouco sobre o que está dentro de cada um dos seus "nós".
+Uma estrutura do tipo lista e uma tabela hash. Um array de tabelas hash é criado para apontar para as listas que armazenam palavras do dicionário.
+
+8. Quão lento era o seu código na primeira vez que você o fez funcionar?
+Tinha uma diferença pequena em relação a versão final.
+
+9. Que tipos de alterações, se for o caso, você fez no seu código ao longo da semana (er, quintafeira), a fim de melhorar o seu desempenho?
+Troca da função hash e otimizações nas variáveis.
+
+10. Você sente que o seu código tem alguma parte pesada que você não foi capaz de desbastar?
+Não.
