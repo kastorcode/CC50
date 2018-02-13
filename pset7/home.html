@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Matheus Ramalho de Oliveira home page"/>
+	<meta name="keywords" content="HTML,CSS,CC50,CS50,PSET7"/>
+	<meta name="author" content="Matheus Ramalho de Oliveira"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>My Home Page</title>
+<style>
+* {box-sizing:border-box}
+:not(a) {transition:1s}
+html,body {height:100%}
+
+body {
+	color: #AEA79F;
+	background-color: #2C001E;
+	font-family: Ubuntu, monospace;
+	box-shadow: 0px 0px 20px 1px #E95420;
+	width: 50%;
+	margin: auto;
+}
+
+#header {
+	background-color: #5E2750;
+	padding: 10px;
+	width: 100%;
+	min-height: 20%;
+}
+
+#middle {
+	background-color: #77216F;
+	padding: 10px;
+	font-size: 1.25em;
+	text-align: justify;
+	width: 100%;
+	min-height: 70%;
+}
+
+#footer {
+	background-color: #5E2750;
+	padding: 5px 10px;
+	font-size: 1em;
+	text-align: right;
+	line-height: 2.9;
+	width: 100%;
+	min-height: 10%;
+}
+
+h1 {
+	font-size: 2em;
+	text-align: center;
+}
+
+nav {
+	position: absolute;
+	margin-top: -10px;
+}
+
+nav a {
+	color: #AEA79F;
+	background-color: #E95420;
+	border-radius: 10px;
+	text-decoration: none;
+	padding: 10px;
+	margin-left: 10px;
+}
+
+nav a:hover {
+	color: #5E2750;
+	text-decoration: none;
+}
+
+a {
+	color: #E95420;
+	text-decoration: none;
+}
+
+a:hover {text-decoration:underline}
+
+@media screen and (max-width:600px) {
+	body {width:90%}
+	h1 {font-size:1.5em}
+}
+</style>
+</head>
+<body>
+	<div id="header">
+		<h1>MY PSET7 HOME PAGE</h1>
+	</div>
+	<nav>
+		<a href="/">HOME</a><a href="/pset7" target="_blank">PSET7</a><a href="/phpmyadmin" target="_blank">phpMyAdmin</a>
+	</nav>
+	<div id="middle">
+		<p>This page is just a home page created for the CC50 pset7. Go to <a href="http://cc50.com.br" target="_blank">cc50.com.br</a> to know more. About: "Exigente, mas definitivamente possível de ser feito. Social, mas educacional. Um tópico focado, mas habilidades amplamente aplicáveis. CS50 é o curso de Harvard por excelência, e CC50 é a adaptação gratuita desse curso, no Brasil."</p>
+	</div>
+	<div id="footer">
+		<span>© Matheus</span>
+	</div>
+</body>
+</html>

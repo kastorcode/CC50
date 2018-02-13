@@ -1,0 +1,102 @@
+* {box-sizing:border-box}
+
+html,body {
+	height:100%;
+	background-color: #FFFFFF;
+}
+
+body {color: #989898;}
+
+#top {
+	height: 33%;
+	text-align: center;
+}
+
+#middle {
+	min-height: 61%;
+	width: 75%;
+	color: #666666;
+	background-color: #F5F5F5;
+	border: 1px solid #989898;
+	padding: 50px 25px;
+	margin: auto;
+	text-align: center;
+}
+
+#bottom {
+	height: 6%;
+	background-color: #F5F5F5;
+	border: 1px solid #989898;
+	margin: 10px 0;
+	padding: 10px;
+	text-align: right;
+}
+
+nav {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+nav a {
+	text-decoration: none;
+	color: #989898;
+	background-color: #F5F5F5;
+	border: 1px solid #989898;
+	border-radius: 20px;
+	padding: 10px;
+	margin-left: 5px;
+}
+
+nav a:hover {
+	color: #F5F5F5;
+	background-color: #989898;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: #4F70A0;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+}
+
+td {
+	border: 1px solid #989898;
+	padding: 5px;
+}
+
+input[type="text"], input[type="number"], input[type="password"] {
+	background-color: #ffffff;
+	border: 1px solid #4F70A0;
+	margin: 0 0 5px 5px;
+	transition: box-shadow 0.5s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="password"]:focus {
+	outline: none;
+	box-shadow: 0 0 10px 0.5px #4F70A0;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+	color: #F5F5F5;
+	background: linear-gradient(#78a8ef, #4F70A0);
+	border: 0;
+	padding: 5px 10px;
+}
+
+input[type="submit"]:hover {background: linear-gradient(#4F70A0, #78a8ef);}
+
+@media screen and (max-width:600px) {
+	#middle {width:100%; padding:40px 10px;}
+	nav {position:relative; transform:translate(-50%,0); text-align:center;}
+	nav a {display:inline-block; width:31.7%; margin-left:4px; margin-bottom:4px;}
+}
