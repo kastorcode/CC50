@@ -1,0 +1,37 @@
+I. Repare que main chama strcmp. O que significa se strcmp, após receber duas strings como argumentos, retornar 0? (Dica: RTFM)
+Ele compara as duas strings, retorna: -1 se a primeira for menor, 0 se forem iguais, 1 se a primeira for maior.
+
+---
+
+II. Como você reescreveria a linha abaixo, extraída de main, usando if e else? int max = (!strcmp(g.level, "debug")) ? 9 : 1024;
+Sim:
+int max;
+if (strcmp(g.level) == "debug")
+	max = 9;
+else
+	max = 1024;
+
+---
+
+III. Em que circunstâncias o uso de sscanf abaixo, extraído de main, retorna 2 em vez de 1? sscanf(argv[2], " %d %c", &g.number, &c)
+Caso o usuário escolha um nível inválido, uma letra no terceiro argumento do prompt por exemplo.
+
+---
+
+IV. Que atributos de g representam as coordenadas onde cursor do usuário está?
+As variáveis Y e X.
+
+---
+
+V. Qual função (que nós escrevemos) você pode chamar para levar o cursor para essas coordenadas? (Dica: nós lhe dissemos alguns parágrafos atrás)
+Função show_cursor.
+
+---
+
+VI. Perto de que linha de main você poderia adicionar elementos case para lidar com outras teclas além de N, R, e ctrl-L?
+Dentro de switch (ch).
+
+---
+
+VII. A maioria das placas n00b e l33t têm muitos espaços em branco. Mas quantos espaços em branco tem debug #1? E debug #2? E debug #9?
+Debug 1: um, debug 2: dois, debug 9: nove.
