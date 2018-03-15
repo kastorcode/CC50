@@ -1,0 +1,13 @@
+questions.txt	CC50	Set de Problemas 3
+
+i. Além de 4x4 (que são as dimensões originais do Jogo dos Quinze), quais outras dimensões são permitidas?
+São permitidas dimensões de 3 a 9. Exemplo: 3x3, 4x4, 5x5, 6x6, 7x7, 8x8, 9x9.
+
+ii. Que tipo de estrutura de dados representa o tabuleiro do jogo?
+Um array bidimensional.
+
+iii. Qual função é chamada para cumprimentar o jogador no início do jogo?
+Função greet.
+
+iv. Que funções você precisa aparentemente implementar?
+Funções: init, draw, move e won.
