@@ -1,0 +1,56 @@
+0. Quantas cores diferentes cada formato suporta?
+BMP: 16 milhões. GIF: 256. JPEG: 16 milhões. PNG: 16 milhões.
+
+1. Qual destes formatos suporta animação?
+GIF e PNG.
+
+2. Qual é a diferença entre a compressão com perdas e sem perdas?
+A compressão com perdas ocorre quando os dados pós-compressão são diferentes, mas parecido e útil em relação aos dados originais, e a compressão sem perdas ocorre quando os dados pós-compressão são idênticos aos originais.
+
+3. Qual destes formatos é comprimido com perdas?
+GIF e JPEG.
+
+4. O que acontece, tecnicamente falando, quando um arquivo é removido de um sistema de arquivos FAT?
+A sua entrada, seu índice, é removido do diretório raiz, deixando todos os cluters ocupados por ele livres.
+
+5. O que alguém como você pode fazer para garantir (com alta probabilidade) que os arquivos que você excluir não poderão ser recuperados?
+Usar uma ferramenta que tritura arquivos, ou seja, zera informações do hd.
+
+6. O que é stdint.h?
+É um arquivo cabeçalho da linguagem de programação C que declara conjuntos de tipos inteiros com larguras especificas.
+
+7. Porque se usa uint8_t, uint32_t, int32_t e uint16_t em um programa?
+Para garantir que o consumo de bits na memória será igual em todos os computadores independente da arquitetura.
+
+8. Quantos bits tem um BYTE, uma DWORD, um LONG e uma WORD, respectivamente?
+BYTE = 8 bits, DWORD = 32, LONG = 32 em x86 e 64 em x64, WORD = 16.
+
+9. O que (em ASCII, decimal ou hexadecimal) devem ser os dois primeiros bytes de qualquer arquivo BMP?
+Os primeiros dois bytes são de assinatura que indicam que se trata de um arquivo BMP, dois caracteres, B e M, 424D em hexadecimal.
+
+10. Qual é a diferença entre bfSize e biSize?
+bfSize armazena o tamanho em bytes do arquivo bitmap, biSize armazena o número de bytes necessários para a estrutura.
+
+11. O que significa se biHeight for negativo?
+Significa que seus bytes de pixels começam de cima para baixo, canto superior esquerdo.
+
+12. Que campo em BITMAPINFOHEADER especifica a cor do BMP (bits por pixel)?
+O campo biBitCount.
+
+13. Por que fopen pode retornar NULL em copy.c:32?
+Caso a função não consiga abrir o arquivo do hd.
+
+14. Porque é que o terceiro argumento de fread é sempre 1 em nosso código?
+Para verificar se o arquivo começa com BM, pois todo BMP começa com esses dois caracteres.
+
+15. Qual o valor que copy.c:69 atribui a padding se bi.biWidth é 3?
+Padding = 3.
+
+16. O que é que fseek faz?
+Move o cursor para uma determinada posição.
+
+17. O que é SEEK_CUR?
+Uma macro da função fseek que armazena a posição atual do cursor.
+
+18. Quem fez isso? E onde? E com que arma?
+Foi o professor Plum, no salão, com um castiçal. It was Professor Plum in the lounge with the candlestick.
